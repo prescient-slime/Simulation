@@ -7,8 +7,11 @@
 		{
 			"Name": "SIM",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		}
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"AirSim"
+			]
+		}	
 	],
 	"Plugins": [
 		{
