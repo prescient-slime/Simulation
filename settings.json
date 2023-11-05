@@ -1,56 +1,68 @@
 {
-    "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/main/docs/settings_json.md",
-    "SettingsVersion": 1.2,
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/main/docs/settings_json.md",
+  "SettingsVersion": 1.2,
 
-    "SimMode": "Multirotor",
+  "SimMode": "Multirotor",
 
-    "Vehicles": {
-        "Drone1": {
-            "VehicleType": "SimpleFlight",
-            "AutoCreate": true,
-            "Sensors": {
-                "LidarSensor1": {
-                    "SensorType": 6,
-                    "Enabled": true,
-                    "NumberOfChannels": 1,
-                    "RotationsPerSecond": 10,
-                    "Range": 12,
-                    "PointsPerSecond": 8000,
-                    "X": 0,
-                    "Y": 0,
-                    "Z": -1,
-                    "Roll": 0,
-                    "Pitch": 90,
-                    "Yaw": 0,
-                    "VerticalFOVUpper": 0,
-                    "VerticalFOVLower": 0,
-                    "HorizontalFOVStart": 0,
-                    "HorizontalFOVEnd": 0,
-                    "DrawDebugPoints": true,
-                    "DataFrame": "SensorLocalFrame"
-                },
-                "LidarSensor2": {
-                    "SensorType": 6,
-                    "Enabled": true,
-                    "NumberOfChannels": 1,
-                    "RotationsPerSecond": 10,
-                    "Range": 12,
-                    "PointsPerSecond": 8000,
-                    "X": 0,
-                    "Y": 0,
-                    "Z": -1,
-                    "Roll": 90,
-                    "Pitch": 90,
-                    "Yaw": 0,
-                    "VerticalFOVUpper": 0,
-                    "VerticalFOVLower": 0,
-                    "HorizontalFOVStart": 0,
-                    "HorizontalFOVEnd": 0,
-                    "DrawDebugPoints": true,
-                    "DataFrame": "SensorLocalFrame"
-                }
-            }
+  "Vehicles": {
+    "Drone1": {
+      "VehicleType": "SimpleFlight",
+      "AutoCreate": true,
+      "Sensors": {
+        "LidarSensor1": {
+          "SensorType": 6,
+          "Enabled": true,
+          "NumberOfChannels": 1,
+          "RotationsPerSecond": 10,
+          "Range": 12,
+          "PointsPerSecond": 8000,
+          "X": 0,
+          "Y": 0,
+          "Z": -1,
+          "Roll": 0,
+          "Pitch": 90,
+          "Yaw": 0,
+          "VerticalFOVUpper": 0,
+          "VerticalFOVLower": 0,
+          "HorizontalFOVStart": 0,
+          "HorizontalFOVEnd": 0,
+          "DrawDebugPoints": true,
+          "DataFrame": "SensorLocalFrame"
+        },
+        "LidarSensor2": {
+          "SensorType": 6,
+          "Enabled": true,
+          "NumberOfChannels": 1,
+          "RotationsPerSecond": 10,
+          "Range": 12,
+          "PointsPerSecond": 8000,
+          "X": 0,
+          "Y": 0,
+          "Z": -1,
+          "Roll": 90,
+          "Pitch": 90,
+          "Yaw": 0,
+          "VerticalFOVUpper": 0,
+          "VerticalFOVLower": 0,
+          "HorizontalFOVStart": 0,
+          "HorizontalFOVEnd": 0,
+          "DrawDebugPoints": true,
+          "DataFrame": "SensorLocalFrame"
         }
+      }
     }
+  },
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 0,
+        "Width": 1920,
+        "Height": 1080,
+        "FOV_Degrees": 90,
+        "AutoExposureSpeed": 100,
+        "MotionBlurAmount": 0
+      }
+    ]
+  }
 }
   
