@@ -70,7 +70,9 @@ class LidarTest:
         try:
             while True:
                 for lidar_name in lidar_names:
-                    filename = f"{vehicle_name}_{lidar_name}_pointcloud.asc"
+                    #filename = f"{vehicle_name}_{lidar_name}_pointcloud.asc"
+                    filename = f"{vehicle_name}_{lidar_name}_pointcloud.xyz"
+        
                     if not existing_data_cleared:
                         f = open(filename,'w')
                     else:
@@ -92,7 +94,8 @@ class LidarTest:
                         final_y = corrected_y + position.y_val
                         final_z = corrected_z + position.z_val
 
-                        f.write("%f %f %f %d %d %d \n" % (final_x,final_y,final_z,255,255,0))
+                        #f.write("%f %f %f %d %d %d \n" % (final_x,final_y,final_z,255,255,0))
+                        f.write("%f %f %f \n" % (final_x,final_y,final_z))
                     f.close()
                 existing_data_cleared = True
         except KeyboardInterrupt:
@@ -102,4 +105,5 @@ class LidarTest:
 # main
 if __name__ == "__main__":
     lidarTest = LidarTest()
-    lidarTest.execute('Drone1',['LidarSensor1','LidarSensor2'])
+    #lidarTest.execute('Drone1',['LidarSensor1','LidarSensor2'])
+    lidarTest.execute('Drone1',['LidarSensor1'])
