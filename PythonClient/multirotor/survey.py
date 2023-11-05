@@ -5,6 +5,8 @@ import sys
 import time
 import argparse
 
+##PLEASE SEE MAIN TO SEE HOW YOU MUST PASS IN ARGUMENTS. THANK YOU.
+
 class SurveyNavigator:
     def __init__(self, args):
         self.boxsize = args.size
